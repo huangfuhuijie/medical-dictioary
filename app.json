@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#0079d7",
+    "navigationBarTitleText": "医专词场",
+    "navigationBarTextStyle": "white"
+  }
+}

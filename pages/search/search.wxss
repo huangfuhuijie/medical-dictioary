@@ -1,0 +1,25 @@
+/* pages/search/search.wxss */
+.card {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10rpx;
+  border: 2rpx solid #000;
+  padding: 20rpx;
+  color: #000;
+}
+
+.word{
+  color: #000;
+  font-size: 50rpx;
+  font-weight: bold;
+}
+
+.webitem{
+  display: flex;
+  flex-direction: column;
+}
+
+.phonetic{
+  font-size: 30rpx;
+  color:gray;
+}

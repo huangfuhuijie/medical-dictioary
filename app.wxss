@@ -1,0 +1,38 @@
+.container {
+  padding: 25rpx;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+
+.quick {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border: 1rpx solid #DDD;
+  padding: 20rpx;
+  color: #9B9B9B;
+}
+
+.quick .add {
+  width: 40rpx;
+  margin-right: 10rpx;
+  color: #7ED321;
+  font-size: 40rpx;
+  font-weight: bold;
+}
+
+.header .new-quick {
+  flex: 1;
+  font-size: 30rpx;
+}
+
+.header .new {
+  width: 120rpx;
+  padding-left: 20px;
+  font-size: 30rpx;
+  color: #7ED321;
+}

@@ -1,0 +1,12 @@
+<!--pages/index/index.wxml-->
+<view class='container'>
+<navigator url='/pages/search/search'>
+  <view class="header">
+      <view class="quick">
+        <icon type='search'></icon>
+        <text class='new-quick'>搜索</text>
+      </view>
+  </view>
+</navigator>
+<text>我是起始页面，点击上面那个按钮跳转到搜索页面</text>
+</view>

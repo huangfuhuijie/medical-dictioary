@@ -1,0 +1,19 @@
+<!--pages/search/search.wxml-->
+<view class='container'>
+  <view class="header">
+      <view class="quick">
+        <icon type='search'></icon>
+        <input class="new-quick" value="{{ todo }}" placeholder="搜索"
+         auto-focus confirm-type='search' bindconfirm='finish_input' bindinput='bindinput'/>
+      </view>
+  </view>
+  <view class="card" wx:if="{{success}}">
+    <text class='word'>{{inputValue}}</text>
+    <text class='phonetic'>/{{phonetic}}/</text>
+    <text>基本释义：{{basic_explain}}</text>
+    <view class='webitem' wx:if = "{{web_explain}}">
+      <text>网络释义：</text>
+      <text wx:for="{{web_explain}}">{{index+1}}:{{item.value}}</text>
+    </view>
+  </view>
+</view>
