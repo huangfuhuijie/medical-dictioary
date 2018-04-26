@@ -61,7 +61,7 @@ Page({
     })
 
     /*****************************分割线，以下是维基百科的request*************/
-    var url = 'https://en.wikipedia.org/w/api.php?format=json&action=query&generator=search&gsrnamespace=0&gsrlimit=1&prop=description|pageimages&pithumbsize=300&origin=*&gsrsearch='
+    var url = 'https://4exqw3lv.qcloud.la/weapp/search?search=';
     wx.request({
       url: url+this.data.inputValue,
       success: function (data) {
@@ -69,11 +69,12 @@ Page({
           wx.hideNavigationBarLoading();
         }
         console.log(data);
+        var my = JSON.parse(data.data.data.data.body);
         var pageid;
-        for(var page_id in data.data.query.pages){
+        for(var page_id in my.query.pages){
           pageid=page_id;
         }
-        var page = data.data.query.pages[pageid];
+        var page = my.query.pages[pageid];
         var extract = page.description;
         var img = page.thumbnail.source;
         that.setData({
